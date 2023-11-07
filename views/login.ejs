@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/stylesheets/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <title>Đăng nhập</title>
+  <style>
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+
+    .alert_success {
+      padding: 20px;
+      background-color: green;
+      color: white;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <% if (message && message.error) { %>
+    <div class="alert" id="success-alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Không thành công!</strong>
+      <%= message.error %>
+    </div>
+    <% } %>
+
+      <% if (message && message.success) { %>
+        <div class="alert_success" id="success-alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          <strong>Thành công!</strong>
+          <%= message.success %>
+        </div>
+        <% } %>
+          <div class="container" id="container">
+            <div class="form-container sign-up-container">
+              <form action="/login/signup" method="post">
+                <h1>Đăng ký</h1>
+                <div class="social-container">
+                  <a href="/login/auth/facebook" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="/login/auth/google" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span>Tạo một tài khoản mới</span>
+                <input type="text" placeholder="Name" name="name" required />
+                <input type="email" placeholder="Email" name="email" required />
+                <input type="password" placeholder="Password" name="password" required />
+                <button id="dangky">Đăng ký</button>
+              </form>
+            </div>
+            <div class="form-container sign-in-container">
+              <form action="/login" method="post">
+                <h1>Đăng nhập</h1>
+                <div class="social-container">
+                  <a href="/login/auth/facebook" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="/login/auth/google" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span>Đăng nhập với tài khoản của bạn</span>
+                <input type="text" placeholder="Name" name="name" required />
+                <input type="password" placeholder="Password" name="password" required />
+                <button>Đăng nhập</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1>Chào mừng quay lại!</h1>
+                  <p>
+                    Hãy đăng nhập để tiếp tục
+                  </p>
+                  <button class="ghost" id="signIn">Đăng nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <h1>Chưa có tài khoản!</h1>
+                  <p>Đăng ký ngay</p>
+                  <button class="ghost" id="signUp">Đăng ký</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="/javascripts/login.js"></script>
+          <script>
+            $("#success-alert").fadeTo(4000, 500).slideUp(500, function () {
+              $("#success-alert").slideUp(500);
+            });
+            $(document).ready(function () {
+
+              $("#dangky").click(function showAlert() {
+                $("#success-alert").fadeTo(4000, 500).slideUp(500, function () {
+                  $("#success-alert").slideUp(500);
+                });
+              });
+            });
+          </script>
+</body>
+
+</html>

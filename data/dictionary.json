@@ -1,0 +1,122 @@
+[
+  {
+    "language": "en",
+    "words": [
+      {
+        "question": "What is your return policy?",
+        "intent": "return_policy",
+        "answer": "Our return policy allows for returns up to 30 days after purchase with a valid receipt."
+      },
+      {
+        "question": "How can I track my order?",
+        "intent": "order_tracking",
+        "answer": "You can track your order by logging into your account on our website or by using the tracking number provided in your confirmation email."
+      },
+      {
+        "question": "What is your shipping policy?",
+        "intent": "shipping_policy",
+        "answer": "We offer free shipping on all orders over $50 and standard shipping rates apply for orders under $50."
+      },
+      {
+        "question": "Do you offer international shipping?",
+        "intent": "international_shipping",
+        "answer": "Yes, we offer international shipping to select countries. Please check our website for a list of eligible countries and shipping rates."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "intent": "payment_methods",
+        "answer": "We accept all major credit cards, PayPal, and Apple Pay."
+      },
+      {
+        "question": "Hi, can you tell me more about your company?",
+        "intent": "company_info",
+        "answer": "Sure, we are a leading provider products and services. Our mission is to provide high-quality products and exceptional customer service."
+      },
+      {
+        "question": "What are your business hours?",
+        "intent": "business_hours",
+        "answer": "Our business hours are Monday to Friday, from 9am to 5pm. We are closed on weekends and public holidays."
+      },
+      {
+        "question": "How can I contact your customer support team?",
+        "intent": "customer_support",
+        "answer": "You can contact our customer support team by phone, email, or live chat. Our contact information is available on our website."
+      },
+      {
+        "question": "Do you have any current promotions or discounts?",
+        "intent": "promotions",
+        "answer": "Yes, we currently have a promotion for 10% off all orders over $50. Please use the code 'SAVE10' at checkout to apply the discount."
+      },
+      {
+        "question": "Hello, how are you?",
+        "intent": "hello",
+        "answer": "Hello! I'm just a machine, so I don't have feelings. But I'm here to assist you with any questions or concerns you may have. What can I help you with today?"
+      },
+      {
+        "question": "Hi there, can you help me with something?",
+        "intent": "hello",
+        "answer": "Hi there! Of course, I'm here to help. What can I assist you with today?"
+      }
+    ]
+  },
+  {
+    "language": "vi",
+    "words": [
+      {
+        "question": "Bạn có nhận đổi trả hàng không?",
+        "intent": "return_policy",
+        "answer": "Chính sách đổi trả của chúng tôi cho phép đổi trả hàng trong vòng 30 ngày kể từ ngày mua với hóa đơn hợp lệ."
+      },
+      {
+        "question": "Làm thế nào để theo dõi đơn hàng của tôi?",
+        "intent": "order_tracking",
+        "answer": "Bạn có thể theo dõi đơn hàng của mình bằng cách đăng nhập vào tài khoản của mình trên trang web của chúng tôi hoặc bằng cách sử dụng mã theo dõi được cung cấp trong email xác nhận của bạn."
+      },
+      {
+        "question": "Chính sách vận chuyển của bạn là gì?",
+        "intent": "shipping_policy",
+        "answer": "Chúng tôi cung cấp dịch vụ vận chuyển miễn phí cho tất cả các đơn hàng trên 50 đô la và mức phí vận chuyển tiêu chuẩn áp dụng cho các đơn hàng dưới 50 đô la."
+      },
+      {
+        "question": "Bạn có cung cấp vận chuyển quốc tế không?",
+        "intent": "international_shipping",
+        "answer": "Có, chúng tôi cung cấp vận chuyển quốc tế đến các quốc gia được chọn. Vui lòng kiểm tra trang web của chúng tôi để biết danh sách các quốc gia đủ điều kiện và giá vận chuyển."
+      },
+      {
+        "question": "Phương thức thanh toán nào được chấp nhận?",
+        "intent": "payment_methods",
+        "answer": "Chúng tôi chấp nhận tất cả các thẻ tín dụng chính, PayPal và Apple Pay."
+      },
+      {
+        "question": "Xin chào, bạn có thể cho tôi biết thêm về công ty của bạn?",
+        "intent": "company_info",
+        "answer": "Chắc chắn rồi, chúng tôi là nhà cung cấp hàng đầu các sản phẩm và dịch vụ. Nhiệm vụ của chúng tôi là cung cấp các sản phẩm chất lượng cao và dịch vụ khách hàng đặc biệt."
+      },
+      {
+        "question": "Giờ làm việc của bạn như thế nào?",
+        "intent": "business_hours",
+        "answer": "Giờ làm việc của chúng tôi là từ thứ Hai đến thứ Sáu, từ 9 giờ sáng đến 5 giờ chiều. Chúng tôi đóng cửa vào cuối tuần và ngày lễ."
+      },
+      {
+        "question": "Làm cách nào tôi có thể liên hệ với nhóm hỗ trợ khách hàng của bạn?",
+        "intent": "customer_support",
+        "answer": "Bạn có thể liên hệ với nhóm hỗ trợ khách hàng của chúng tôi qua điện thoại, email hoặc trò chuyện trực tiếp. Thông tin liên lạc của chúng tôi có sẵn trên trang web của chúng tôi."
+      },
+      {
+        "question": "Bạn có bất kỳ chương trình khuyến mãi hoặc giảm giá hiện tại?",
+        "intent": "promotions",
+        "answer": "Có, chúng tôi hiện đang có chương trình khuyến mãi giảm giá 10% cho tất cả các đơn hàng trên $50. Vui lòng sử dụng mã 'SAVE10' khi thanh toán để áp dụng giảm giá."
+      },
+      {
+        "question": "Xin chào bạn khoẻ không?",
+        "intent": "hello",
+        "answer": "Xin chào! Tôi chỉ là một robot, nên tôi không có cảm xúc. Nhưng tôi ở đây để hỗ trợ bạn với bất kỳ câu hỏi hoặc mối quan tâm nào mà bạn có thể có. Tôi có thể giúp gì cho bạn ngày hôm nay?"
+      },
+      {
+        "question": "Xin chào, bạn có thể giúp tôi một việc không?",
+        "intent": "hello",
+        "answer": "Chào bạn! Tất nhiên, tôi ở đây để giúp đỡ. Tôi có thể giúp gì cho bạn hôm nay?"
+      }
+    ]
+  }
+]
